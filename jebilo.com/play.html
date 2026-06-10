@@ -6,8 +6,45 @@
     <title>jebilo.com</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/play.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3447437944629450"
-        crossorigin="anonymous"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+        let anchorSlot = null;
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1781087252063-0').addService(googletag.pubads());
+            googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1781086967128-0').addService(googletag.pubads());
+
+            // 底部锚定广告
+            anchorSlot = googletag.defineOutOfPageSlot(
+                '/23353473516/jebilo.com_Web_Anchor_1',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (anchorSlot) {
+                anchorSlot.addService(googletag.pubads());
+            }
+
+            googletag.setConfig({
+                singleRequest: true,
+                collapseDiv: 'ON_NO_FILL'
+            });
+            googletag.enableServices();
+
+            googletag.display('div-gpt-ad-1781087252063-0');
+            googletag.display('div-gpt-ad-1781086967128-0');
+
+            if (anchorSlot) {
+                googletag.display(anchorSlot);
+            }
+        });
+
+        function showAnchor() {
+            if (anchorSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(anchorSlot);
+                });
+            }
+        }
+    </script>
 </head>
 
   <body>
@@ -21,8 +58,9 @@
         <div class="font4 title">jebilo.com</div>
       </div>
 
-      <div style="width: 300px; min-height: 250px; ">
-          <!-- jebilo.com_display_01 -->
+           <!-- jebilo.com_display_01 -->
+      <!-- <div style="width: 300px; min-height: 250px; ">
+     
           <ins class="adsbygoogle"
               style="display:block"
               data-ad-client="ca-pub-3447437944629450"
@@ -32,8 +70,8 @@
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-      </div>
-
+      </div> -->
+      <div id="div-gpt-ad-1781087252063-0" style="min-width: 320px; min-height: 50px;"></div>
       <div class="gameBanner" onclick="gotoPlayGame()">
         <img class="bgdimg gameImgUrl" alt="" />
 
@@ -74,8 +112,17 @@
           </div>
         </div>
       </div>
+
+      <div id="div-gpt-ad-1781086967128-0" style="min-width: 300px; min-height: 250px;"></div>
       <div class="SimilarGame"></div>
     </div>
+
+    <script>
+      window.addEventListener('load', function () {
+          showAnchor();
+          
+      });
+    </script>
   </body>
   <script type="module">
     import {
