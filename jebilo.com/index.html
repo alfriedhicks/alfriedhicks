@@ -12,26 +12,27 @@
         window.googletag = window.googletag || { cmd: [] };
         let anchorSlot = null;
         googletag.cmd.push(function () {
-            googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1781087252063-0').addService(googletag.pubads());
-            googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1781086967128-0').addService(googletag.pubads());
+            googletag.defineSlot('/23353473516/532', [[300, 31], [300, 75], [320, 50], [320, 100], [300, 100], [300, 50], [300, 250]], 'div-gpt-ad-1781091143529-0').addService(googletag.pubads());
+            // googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1781087252063-0').addService(googletag.pubads());
+            // googletag.defineSlot('/23353473516/jebilo.com_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1781086967128-0').addService(googletag.pubads());
 
                         // 网页插屏广告
-            interstitialSlot = googletag.defineOutOfPageSlot(
-                '/23353473516/jebilo.com_Web_Interstitial_1',
-                googletag.enums.OutOfPageFormat.INTERSTITIAL
-            );
-            if (interstitialSlot) {
-                interstitialSlot.addService(googletag.pubads());
-            }
+            // interstitialSlot = googletag.defineOutOfPageSlot(
+            //     '/23353473516/jebilo.com_Web_Interstitial_1',
+            //     googletag.enums.OutOfPageFormat.INTERSTITIAL
+            // );
+            // if (interstitialSlot) {
+            //     interstitialSlot.addService(googletag.pubads());
+            // }
 
-            // 底部锚定广告
-            anchorSlot = googletag.defineOutOfPageSlot(
-                '/23353473516/jebilo.com_Web_Anchor_1',
-                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
-            );
-            if (anchorSlot) {
-                anchorSlot.addService(googletag.pubads());
-            }
+            // // 底部锚定广告
+            // anchorSlot = googletag.defineOutOfPageSlot(
+            //     '/23353473516/jebilo.com_Web_Anchor_1',
+            //     googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            // );
+            // if (anchorSlot) {
+            //     anchorSlot.addService(googletag.pubads());
+            // }
 
             googletag.setConfig({
                 singleRequest: true,
@@ -39,16 +40,17 @@
             });
             googletag.enableServices();
 
-            googletag.display('div-gpt-ad-1781087252063-0');
-            googletag.display('div-gpt-ad-1781086967128-0');
+            googletag.display('div-gpt-ad-1781091143529-0');
+            // googletag.display('div-gpt-ad-1781087252063-0');
+            // googletag.display('div-gpt-ad-1781086967128-0');
 
-            if (interstitialSlot) {
-                googletag.display(interstitialSlot);
-            }
+            // if (interstitialSlot) {
+            //     googletag.display(interstitialSlot);
+            // }
 
-            if (anchorSlot) {
-                googletag.display(anchorSlot);
-            }
+            // if (anchorSlot) {
+            //     googletag.display(anchorSlot);
+            // }
         });
 
         function showInterstitial() {
@@ -92,7 +94,8 @@
             </div>
         </header>
 
-        <div id="div-gpt-ad-1781087252063-0" style="min-width: 320px; min-height: 50px;"></div>
+        <div id="div-gpt-ad-1781091143529-0"></div>
+        <!-- <div id="div-gpt-ad-1781087252063-0" style="min-width: 320px; min-height: 50px;"></div> -->
         <main class="main-content">
 
             <div class="banner">
@@ -112,7 +115,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script> -->
             
-            <div id="div-gpt-ad-1781086967128-0" style="min-width: 300px; min-height: 250px;"></div>
+            <!-- <div id="div-gpt-ad-1781086967128-0" style="min-width: 300px; min-height: 250px;"></div> -->
 
             <section class="hot font2">
                 <h2>
@@ -191,7 +194,7 @@
         </div>
 
     </div>
-    <script>
+    <!-- <script>
       window.addEventListener('load', function () {
           showAnchor();
           // 例如 5 秒后展示一次插屏（正式上线不建议太暴力，看你需求）
@@ -199,7 +202,7 @@
               showInterstitial();
           }, 1000);
       });
-    </script>
+    </script> -->
 </body>
 <script type="module">
     import { getGamesListApi } from "./assets/js/business.js";
