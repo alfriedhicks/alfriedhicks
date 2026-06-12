@@ -8,8 +8,15 @@
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/index.css">
     <script src="./assets/js/swiper-element-bundle.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9420238399205683"
-     crossorigin="anonymous"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/23353473516/banner01', [[320, 100], [320, 50], [300, 50], [300, 31], [300, 100], [300, 75], [300, 250]], 'div-gpt-ad-1781236342025-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+    </script>
 </head>
 
 <body>
@@ -78,22 +85,17 @@
         }'>
         </swiper-container>
 
-        <!-- cc_ecuor_display_02 -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-9420238399205683"
-            data-ad-slot="7647905128"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
         <main class="main-content">
 
             <!-- <a href="search.html" class="search-bar">
                 <div class="icon">🔍</div>
             </a> -->
+            <!-- /23353473516/banner01 -->
+            <div id='div-gpt-ad-1781236342025-0' style='min-width: 300px; min-height: 31px;'>
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781236342025-0'); });
+                </script>
+            </div>
 
             <section class="hot font2">
                 <h2> <img src="./assets/2 copy.png" alt=""> HOT</h2>
@@ -139,10 +141,6 @@
                 <div class="BoysGameGridBox">
                 </div>
             </section>
-
-
-
-
         </main>
 
         <div class="site-info-area font1">
@@ -269,11 +267,7 @@
 
             })
         }
-
-
-
     }
-
 
     let hotGameList = GameList.slice(gamesListIndex, gamesListIndex += 16)
     hotGameList.forEach((item) => {
@@ -295,8 +289,6 @@
       `;
 
         document.querySelector('.hotGameGridBox').appendChild(hotGameItem);
-
-
     })
 
     let newGameList = GameList.slice(gamesListIndex, gamesListIndex += 6)
