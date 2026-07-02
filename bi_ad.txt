@@ -3,16 +3,16 @@ Display01 :
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/23353473516/bi.jebilo.com_san1go_ad_01', [[300, 75], [300, 250], [320, 100], [320, 50], [300, 50], [300, 31], [300, 100]], 'div-gpt-ad-1782975897048-0').addService(googletag.pubads());
+    googletag.defineSlot('/23353473516/bi.jebilo.com_san1go_ad_01', ['fluid'], 'div-gpt-ad-1782983426314-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
 
 <!-- /23353473516/bi.jebilo.com_san1go_ad_01 -->
-<div id='div-gpt-ad-1782975897048-0' style='min-width: 300px; min-height: 31px;'>
+<div id='div-gpt-ad-1782983426314-0'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1782975897048-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1782983426314-0'); });
   </script>
 </div>
 
